@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <!-- google-font (Quicksand) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./asset/font/fontawesome-free-5.15.2-web/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header></header>
+    <!-- end-header -->
+    <!-- about -->
+    <section class="about"></section>
+    <!-- end-about -->
+    <!-- Restaurants -->
+    <section class="Restaurant"></section>
+    <!-- end-Restaurant -->
+    <!-- new -->
+    <section class="new"></section>
+    <!-- end-new -->
+    <!-- item -->
+    <section class="item"></section>
+    <!-- end-item -->
+    <!-- mouth -->
+    <section class="mouth"></section>
+    <!-- end-mouth -->
+    <!-- video-->
+    <video src=""></video>
+    <!-- end-video -->
+    <!-- Vy làm phần này =) -->
+    <!-- blogs -->
+    <section class="blog"></section>
+    <!-- end-blog -->
+    <!-- Testimonial -->
+    <section class="Testimonial"></section>
+    <!-- end-Testimonial -->
+    <!-- footer -->
+    <footer></footer>
+    <!-- backToTop -->
+    <div class="backToTop"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- google-font (Quicksand) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- google-font (Pacifico) -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <!--  -->
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.2-web/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  
+  <!-- css -->
+  <link rel="stylesheet" href="./asset/css/test.css" />
+  <link rel="stylesheet" href="./asset/css/main.css" />
+  <link rel="stylesheet" href="./asset/css/style.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container pt-4">
+      <div class="row justify-content-between">
+        <nav class="navbar navbar-light justify-content-between">
+          <a href="./index.html" class="navbafont-weight-bold">Diner</a>
+        </nav>
+        <form class="form-inline">
+          <div class="header__search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search here.." aria-label="Search" />
+            <i class="fas fa-search"></i>
+          </div>
+          <!-- xử lý toggle light-dark -->
+          <div class="header__toggle">
+            <label for="header__input" class="header__sun">
+              <input type="checkbox" id="header__input" />
+              <div class="header__icon">
+                <i class="far fa-sun"></i>
+                <i class="far fa-moon"></i>
+              </div>
+            </label>
+          </div>
+          <!-- xử lý mở thanh menu -->
+          <label for="header__open" class="header__button--open">
+            <i class="fa fa-bars"></i>
+          </label>
+          <input type="checkbox" hidden id="header__open" />
+          <!-- thanh nav -->
+          <nav class="header__menu">
+            <label for="header__open" class="header__button--close"><i class="fa fa-times"></i></label>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">404</a></li>
+              <li><a href="">Landing Page</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Shot Codes</a></li>
+              <li><a href="">Email</a></li>
+            </ul>
+          </nav>
+        </form>
+      </div>
+      <!-- header--title -->
+      <div class="header__title pt-5 mt-5">
+        <div class="title pt-3">
+          <h3 class="mb-4">The Only Thing We Love More Than Food Is You!</h3>
+          <p class="pr-lg-5 mt-md-4 mt-3 mb-3">
+            Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.Ea ipsum sed consequuntur illum facere.
+          </p>
+          <a href="#" class="btn mt-sm-5 mr-2">Read More <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end-header -->
+  <!-- about -->
+  <section class="about py-5">
+    <div class="container py-md-5">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 mb-4">
+          <div class="title">
+            <h6>About Us</h6>
+            <h3>We found our creative space that is open for you.</h3>
+          </div>
+        </div>
+        <div class="col-lg-7 pl-lg-5">
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+            amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+            Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit,
+            culpa!Lorem ipsum init dolor sit.
+          </p>
+          <p class="mt-3">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+            ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+            amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-about -->
+  <!-- Restaurants -->
+  <section class="Restaurant">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+          <div class="restaurant__img"></div>
+        </div>
+        <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+          <div class="restaurant__info p-md-5 p-3">
+            <div class="title">
+              <h6>More than 3000 Restaurants</h6>
+              <h3>Book a table easly at the best price</h3>
+            </div>
+            <p class="py-3">
+              Vestibulum ante ipsum primis in faucibus orci luctus turpis
+              sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam
+              tesque et libero ut justo ultrices in.
+            </p>
+            <div class="row justify-content-between pt-4">
+              <div class="restaurant__item col-6">
+                <div class="icon mb-3">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+                <a>Best Deals</a>
+                <p>
+                  Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                </p>
+              </div>
+              <div class="restaurant__item col-6">
+                <div class="icon mb-3">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <a>Best Food</a>
+                <p>
+                  Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-Restaurant -->
+  <!-- new -->
+  <section class="new">
+    <div class="title text-center pt-5">
+      <h6>What's New</h6>
+      <h3>Popular Categories</h3>
+    </div>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="new__item col-lg-4 col-6 mt-lg-0 mt-4">
+          <img src="./asset/img/g1.jpg" alt="" />
+          <div class="new__info">
+            <h4>Vegetarian</h4>
+            <span>$350</span>
+          </div>
+        </div>
+        <div class="new__item col-lg-4 col-6 mt-lg-0 mt-4">
+          <img src="./asset/img/g2.jpg" alt="" />
+          <div class="new__info">
+            <h4>Drinks</h4>
+            <span>$550</span>
+          </div>
+        </div>
+        <div class="new__item col-lg-4 col-6 mt-lg-0 mt-4">
+          <img src="./asset/img/g3.jpg" alt="" />
+          <div class="new__info">
+            <h4>Lunch</h4>
+            <span>$650</span>
+          </div>
+        </div>
+        <div class="new__item col-lg-4 col-6 mt-4 pt-lg-2">
+          <img src="./asset/img/g4.jpg" alt="" />
+          <div class="new__info">
+            <h4>Bakery</h4>
+            <span>$550</span>
+          </div>
+        </div>
+        <div class="new__item col-lg-4 col-6 mt-4 pt-lg-2">
+          <img src="./asset/img/g5.jpg" alt="" />
+          <div class="new__info">
+            <h4>Desserts</h4>
+            <span>$750</span>
+          </div>
+        </div>
+        <div class="new__item col-lg-4 col-6 mt-4 pt-lg-2">
+          <img src="./asset/img/g6.jpg" alt="" />
+          <div class="new__info">
+            <h4>Pizza</h4>
+            <span>$850</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-new -->
+  <!-- item -->
+  <section class="item pt-5">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="item__info col-lg-4 col-md-6 col-sm-12">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>01</p>
+                <h4>Soup</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item__info col-lg-4 col-md-6 col-sm-12 mt-md-0 mt-4">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>02</p>
+                <h4>Drinks</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item__info col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fa fa-thermometer-full"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>03</p>
+                <h4>Pizza</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item__info col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fa fa-american-sign-language-interpreting"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>04</p>
+                <h4>Breakfast</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item__info col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fa fa-paint-brush"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>05</p>
+                <h4>Lunch</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="item__info col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="item__info--detail">
+            <div class="item__info--top row">
+              <div class="icon">
+                <i class="fa fa-eraser"></i>
+              </div>
+              <div class="item__info--number pl-4">
+                <p>06</p>
+                <h4>Dinner</h4>
+              </div>
+            </div>
+            <div class="item__info--bottom mt-3">
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui
+                eligendi vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-item -->
+  <!-- mouth -->
+  <section class="mouth pt-5 mt-5">
+    <div class="mouth__img pt-5">
+      <div class="container text-center py-lg-3">
+        <div class="mouth__title py-lg-5">
+          <h3 class="px-lg-5 mb-lg-2">
+            Deliciousness jumping into the mouth.
+          </h3>
+        </div>
+        <div class="mouth__btn">
+          <span class="btn-Read lefRight">
+            <a href="">Read More <i class="fas fa-chevron-right ml-2"></i></a>
+          </span>
+          <span class="btn-contact lefRight">
+            <a href="">Contact Us <i class="fas fa-chevron-right ml-2"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="container mouth__list pb-sm-5 mb-sm-5">
+        <div class="row">
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="mouth__item">
+              <div class="mouth__icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <span class="mt-3 counter">15,100</span>
+              <p>Branches</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="mouth__item">
+              <div class="mouth__icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <span class="mt-3 counter">19,256</span>
+              <p>Food Items</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="mouth__item">
+              <div class="mouth__icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <span class="mt-3 counter">12,100</span>
+              <p>Chefs</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="mouth__item">
+              <div class="mouth__icon">
+                <i class="far fa-smile"></i>
+              </div>
+              <span class="mt-3 counter">2,560</span>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-mouth -->
+  <!-- video-->
+  <section class="video pt-lg-5 mt-lg-5 mt-sm-5">
+    <div class="video__info py-sm-5 mt-sm-5 mt-sm-5">
+      <div class="container py-sm-5 mt-sm-5">
+        <div class="video__img">
+          <label for="video__button" class="video__icon">
+            <i class="fas fa-play"></i>
+          </label>
+          <input type="checkbox" hidden id="video__button" />
+          <label for="video__button" class="video__action--img"></label>
+          <div class="video__action">
+            <label for="video__button" class="video__cancel">
+              <i class="fas fa-times"></i>
+            </label>
+            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+              allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-video -->
+  <!-- blogs -->
+  <section class="blog">
+    <div class="blog_content">
+    <div class="title text-center pt-5">
+      <h6>Latest Posts</h6>
+      <h3>Blog Posts</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="card-deck">
+          <div class="col-lg-4 col-md-6 item mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img src="asset/img/banner1.jpg" class="card-img-top radius-image" alt="...">
+                </a>
+                <div class="post-pos">
+                  <a href="#" class="recipe green">
+                    Recipe
+                  </a>
+                  <span class="meta-info meta-info-custom">
+                    <span class="time ml-2" aria-hidden="true">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-4 blog-details">
+                <a href="blog-single.html" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
+                </a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="p-footer mt-3">
+                  <div class="p-meta-info">
+                    <a href="#img" class="post-img-anchor">
+                      <img src="asset/img/team1.jpg" alt="" class="post-img radius-img img-fluid">
+                    </a>
+                    <a href="#url">Jannatul Ferdous</a>
+                  </div>
+                  <a href="#read" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img src="asset/img/banner3.jpg" class="card-img-top radius-image" alt="...">
+                </a>
+                <div class="post-pos">
+                  <a href="#" class="recipe green">
+                    Recipe
+                  </a>
+                  <span class="meta-info meta-info-custom">
+                    <span class="time ml-2" aria-hidden="true">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-4 blog-details">
+                <a href="#" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
+                </a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="p-footer mt-3">
+                  <div class="p-meta-info">
+                    <a href="#img" class="post-img-anchor">
+                      <img src="asset/img/team2.jpg" alt="" class="post-img radius-img img-fluid">
+                    </a>
+                    <a href="#">Jannatul Ferdous</a>
+                  </div>
+                  <a href="#" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                <a href="#">
+                  <img src="asset/img/banner1.jpg" class="card-img-top radius-image" alt="...">
+                </a>
+                <div class="post-pos">
+                  <a href="#" class="recipe green">
+                    Recipe
+                  </a>
+                  <span class="meta-info meta-info-custom">
+                    <span class="time ml-2" aria-hidden="true">
+                      <i class="far fa-clock"></i>
+                    </span>
+                    10 Min Cook
+                  </span>
+                </div>
+              </div>
+              <div class="card-body p-4 blog-details">
+                <a href="#" class="blog-desc">The Best Cookie Recipes To Bake This Weekend
+                </a>
+                <p>Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                <div class="p-footer mt-3">
+                  <div class="p-meta-info">
+                    <a href="#" class="post-img-anchor">
+                      <img src="asset/img/team3.jpg" alt="" class="post-img radius-img img-fluid">
+                    </a>
+                    <a href="#">Jannatul Ferdous</a>
+                  </div>
+                  <a href="#" class="read">Read More <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </section>
+  <!-- end-blog -->
+  <!-- Testimonial -->
+  <section class="testimonial">
+    <div class="testimonial_content">
+    <div class="title text-center pt-5">
+      <h6>Testimonial</h6>
+      <h3>What People Say</h3>
+    </div>
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Carousel indicators -->
+      
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+
+    <!-- Wrapper for carousel items -->
+      <div class="carousel-inner">
+       
+          <div class="item carousel-item active">
+              <div class="img-box"><img src="asset/img/team1.jpg" alt=""></div>
+              <blockquote>
+                <q>OMG! I cannot believe. It's Awesome</q>
+              </blockquote>
+              <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+              <p class="overview"><b>Paula Wilsons</b>Seo Analyst </p>
+              <div class="star-rating"> </div>
+          </div>
+          <div class="item carousel-item">
+              
+            <div class="img-box"><img src="asset/img/team2.jpg" alt=""></div>
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>    
+            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+              <p class="overview"><b>Paula Wilson</b>Media Analyst </p>
+              <div class="star-rating"> </div>
+          </div>
+          <div class="item carousel-item">
+            <div class="img-box"><img src="asset/img/team3.jpg" alt=""></div>
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>  
+            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+              <p class="overview"><b>Antonio Moreno</b>Web Developer</p>
+              <div class="star-rating"> </div>
+          </div>
+          <div class="item carousel-item">
+           
+            <div class="img-box"><img src="asset/img/team3.jpg" alt=""></div>
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>   
+            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
+              <p class="overview"><b>Antonio Moreno</b>Web Developer</p>
+              <div class="star-rating"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end-Testimonial -->
+  <!-- footer -->
+  <footer class="footer-section">
+    <div class="container">
+       
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <a href="#">Diner</a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon mt-4">
+                          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                          <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="col-xl-2 col-lg-6 col-md-12 mt-3">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog posts</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                       
+                        </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-2 col-lg-6 col-md-12 mt-3">
+                    <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                        <h3>More Info</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Vision & Values</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-12 mt-3">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe to our Newsletter </h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Your Email Address"></form>
+                                <button>Subcribe now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="#">Avie</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- backToTop -->
+  <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300"><i
+    class="fas fa-arrow-up"></i></a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script>
+    (function () {
+  var backTop = document.getElementsByClassName("js-back-to-top")[0];
+  if (backTop) {
+    var dataElement = backTop.getAttribute("data-element");
+    var scrollElement = dataElement
+      ? document.querySelector(dataElement)
+      : window;
+    var scrollDuration = parseInt(backTop.getAttribute("data-duration")) || 300,
+      scrollOffsetInit =
+        parseInt(backTop.getAttribute("data-offset-in")) ||
+        parseInt(backTop.getAttribute("data-offset")) ||
+        0,
+      scrollOffsetOutInit =
+        parseInt(backTop.getAttribute("data-offset-out")) || 0,
+      scrollOffset = 0,
+      scrollOffsetOut = 0,
+      scrolling = false;
+
+    var targetIn = backTop.getAttribute("data-target-in")
+        ? document.querySelector(backTop.getAttribute("data-target-in"))
+        : false,
+      targetOut = backTop.getAttribute("data-target-out")
+        ? document.querySelector(backTop.getAttribute("data-target-out"))
+        : false;
+
+    updateOffsets();
+
+    //detect click on back-to-top link
+    backTop.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (!window.requestAnimationFrame) {
+        scrollElement.scrollTo(0, 0);
+      } else {
+        dataElement
+          ? Util.scrollTo(0, scrollDuration, false, scrollElement)
+          : Util.scrollTo(0, scrollDuration);
+      }
+      //move the focus to the #top-element - don't break keyboard navigation
+      Util.moveFocus(
+        document.getElementById(backTop.getAttribute("href").replace("#", ""))
+      );
+    });
+
+    //listen to the window scroll and update back-to-top visibility
+    checkBackToTop();
+    if (scrollOffset > 0 || scrollOffsetOut > 0) {
+      scrollElement.addEventListener("scroll", function (event) {
+        if (!scrolling) {
+          scrolling = true;
+          !window.requestAnimationFrame
+            ? setTimeout(function () {
+                checkBackToTop();
+              }, 200)
+            : window.requestAnimationFrame(checkBackToTop);
+        }
+      });
+    }
+
+    function checkBackToTop() {
+      updateOffsets();
+      var windowTop =
+        scrollElement.scrollTop || document.documentElement.scrollTop;
+      if (!dataElement)
+        windowTop = window.scrollY || document.documentElement.scrollTop;
+      var condition = windowTop >= scrollOffset;
+      if (scrollOffsetOut > 0) {
+        condition =
+          windowTop >= scrollOffset &&
+          window.innerHeight + windowTop < scrollOffsetOut;
+      }
+      Util.toggleClass(backTop, "back-to-top--is-visible", condition);
+      scrolling = false;
+    }
+
+    function updateOffsets() {
+      scrollOffset = getOffset(targetIn, scrollOffsetInit, true);
+      scrollOffsetOut = getOffset(targetOut, scrollOffsetOutInit);
+    }
+
+    function getOffset(target, startOffset, bool) {
+      var offset = 0;
+      if (target) {
+        var windowTop =
+          scrollElement.scrollTop || document.documentElement.scrollTop;
+        if (!dataElement)
+          windowTop = window.scrollY || document.documentElement.scrollTop;
+        var boundingClientRect = target.getBoundingClientRect();
+        offset = bool ? boundingClientRect.bottom : boundingClientRect.top;
+        offset = offset + windowTop;
+      }
+      if (startOffset && startOffset) {
+        offset = offset + parseInt(startOffset);
+      }
+      return offset;
+    }
+  }
+})();
+
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- way point -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./asset/js/jquery.countup.js"></script>
+  <script>
+    // code gọi count up
+    $('.counter').countUp()
+  </script>
+  <script src="./asset/js/util.js"></script>
+  <script src="./asset/js/main.js"></script>
+</body>
+
+</html>
