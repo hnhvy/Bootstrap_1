@@ -739,6 +739,7 @@ h2::after {
   text-align: center;
   overflow: hidden;
   min-height: 340px;
+  width: 560px;
 }
 
 .carousel .item a {
@@ -784,6 +785,7 @@ h2::after {
 
 .carousel .carousel-indicators {
   bottom: 5px;
+  width: 400px;
 }
 
 .carousel-indicators li {

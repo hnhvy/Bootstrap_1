@@ -110,6 +110,9 @@ h6 {
     min-height: 300px;
   }
   /* Testimonia*/
+  .testimonial {
+    overflow: hidden;
+  }
   .testimonial_content {
     max-width: 400px;
   }
@@ -145,7 +148,7 @@ h6 {
     max-width: 400px;
   }
   .carousel-inner {
-    max-width: 420px;
+    max-width: 480px;
   }
   .img-box {
     text-align: center;
@@ -156,6 +159,12 @@ h6 {
   }
   .carousel-indicators {
     padding-right: 257px;
+  }
+  .carousel .carousel-inner .item {
+    width: 200px;
+  }
+  .carousel .carousel-indicators {
+    width: 466px !important;
   }
   /* blog */
   .blog .card {
@@ -178,6 +187,13 @@ h6 {
   }
   .blog .card-body {
     padding: 1.25rem 0;
+  }
+  /* carousel */
+  .carousel .carousel-inner .item {
+    width: 300px;
+  }
+  .carousel .carousel-indicators {
+    width: 300px !important;
   }
 }
 @media screen and (min-width: 600px) {
@@ -238,6 +254,9 @@ h6 {
   .carousel-indicators {
     padding-right: 10px;
   }
+  .carousel .carousel-inner .item {
+    width: 560px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -285,6 +304,13 @@ h6 {
   }
   .carousel-indicators {
     padding-right: 10px;
+  }
+  .carousel .carousel-inner .item {
+    width: 100% !important;
+    margin-right: 0;
+  }
+  .testimonial .carousel .carousel-indicators {
+    width: 470px;
   }
   /* footer */
 }
