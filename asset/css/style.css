@@ -634,6 +634,9 @@ p {
   bottom: 10px;
   left: 10px;
 }
+.blog .card-header {
+  border: none;
+}
 .post-pos .recipe {
   background: var(--primary-color);
   color: #fff;
